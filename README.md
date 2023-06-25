@@ -47,7 +47,7 @@ Ensure your target system has a fresh Operating System installation. Follow thes
 5. After Ubuntu has been successfully installed, install git and git clone the EIV repository into your Ubuntu system.
     ```
     sudo apt -y install git
-    git clone https://github.com/intel-innersource/applications.services.esh.eiv.git
+    git clone https://github.com/intel/edge-insights-vision.git
     ```
 6. In the proxy environment, make sure that you have set the proxy in /etc/environment.
 
@@ -61,9 +61,9 @@ Run the following commands on the target system to install EIV.
     ```
     sudo apt-get -y install python3-pip
     ```
-3. Change the directory into applications.services.esh.eiv and install the requirements package.
+3. Change the directory into edge-insights-vision and install the requirements package.
     ```
-    cd applications.services.esh.eiv
+    cd edge-insights-vision
     pip3 install -r requirements.txt
     ```
     ![install requirement](/images/install_requirement.png)
@@ -86,7 +86,7 @@ Follow these steps to launch Jupyter Notebook and run basic tutorials to verify 
 
 1. After successful installation, change the launch_notebooks.sh script to executable and run the launcher script as shown here:
    ```shell
-   cd applications.services.esh.eiv
+   cd edge-insights-vision
    chmod +x launch_notebooks.sh
    ./launch_notebooks.sh
    ```
