@@ -157,7 +157,6 @@ ov_notebook_setup(){
     cd $HOME
     rm -rf openvino_notebooks
     git clone --depth=1 https://github.com/openvinotoolkit/openvino_notebooks.git
-
 }
 
 #function to setup and install notebook dependencies
