@@ -12,7 +12,6 @@ EIV is a set of pre-validated modules, implemented as a containerized architectu
 ## Modules
 * Docker
 * Intel® GPU drivers
-* The Intel® Distribution of OpenVINO™ toolkit (OpenVINO™) - 2023.0
 * The Intel® Distribution of OpenVINO™ toolkit (OpenVINO™) Docker image 2023.0
 
 

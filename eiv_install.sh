@@ -150,35 +150,13 @@ gpu_drivers_host_install(){
 gpu_drivers_docker_install(){
     docker_proxy
     sudo docker pull openvino/ubuntu22_dev:latest
-    # if (( $(sudo docker image ls openvino/ubuntu22_dev:latest | wc -l)>=2 )); then
-    #     echo "Updated docker image already exists"
-    # else
-    #     download_drivers
-
-    #     sudo docker run -t -d -u root --rm --name eiv --env http_proxy=$http_proxy --env https_proxy=$https_proxy -v "$HOME"/intel_models:/mnt openvino/ubuntu20_runtime:latest
-    #     sudo docker exec eiv bash -c "apt-get update"
-    #     sudo docker exec eiv bash -c "apt-get install -y ffmpeg git"
-    #     sudo docker exec eiv bash -c "dpkg -i /mnt/neo/*deb"
-    #     sudo docker commit eiv openvino/ubuntu_dev:ov
-    #     sudo docker stop eiv
-    # fi
 }
-
-# #function to create python virtual env for OV on host and install openvino dev package
-# ov_python_setup(){
-#     python3 -m venv $HOME/openvino_env
-#     source $HOME/openvino_env/bin/activate
-#     python -m pip install --upgrade pip
-#     pip install openvino-dev[ONNX,pytorch]==2022.3.0
-#     deactivate
-# }
 
 #function to setup ov notebooks
 ov_notebook_setup(){
     cd $HOME
     rm -rf openvino_notebooks
     git clone --depth=1 https://github.com/openvinotoolkit/openvino_notebooks.git
-
 }
 
 #function to setup and install notebook dependencies
