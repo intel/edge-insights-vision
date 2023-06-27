@@ -36,7 +36,7 @@ Follow this step-by-step guide to install Intel® EIV on Linux* for your target 
 >
 >If you are using Intel® NUC 12 Enthusiast Kit (Serpent Canyon), click [here](/Serpent_Canyon.md)
 >
->If you are using an Intel® Arc™ Graphics card, set up the device using the instructions [here](https://www.intel.in/content/www/in/en/support/articles/000091128/graphics.html?erpm_id=1886163_ts1684118208092)
+>If you are using an Intel® Arc™ Graphics card, install hardware using the instructions [here](https://www.intel.in/content/www/in/en/support/articles/000091128/graphics.html?erpm_id=1886163_ts1684118208092)
 
 Ensure your target system has a fresh Operating System installation. Follow these steps to install the Ubuntu operating system:
 1. Download [Ubuntu v20.04-IoT or Ubuntu v22.04-IoT Desktop ISO file](https://ubuntu.com/download/iot/intel-iot) for your Intel hardware to your developer workstation.
