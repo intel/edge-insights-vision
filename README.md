@@ -3,7 +3,7 @@ EIV from Intel features a set of pre-integrated ingredients designed for compute
 
 This package contains the scripts to install Intel® Graphics drivers and setup the environment for OpenVINO™ inference on CPU and Intel® Graphics devices.<br>
 **In order to run inference on GPU you need graphics driver to be installed on host even if you are using docker container as runtime.<br>
-However EIV helps you to seamlessly install right graphics drivers with just one script [here](https://github.com/intel-innersource/frameworks.ai.eiv/blob/release-2.1/README.md#eiv-installation) and help developers to run OpenVINO inference on Intel® CPU and iGPU/dGPU using OpenVINO docker image as runtime.<br>**
+However EIV helps you to seamlessly install right graphics drivers with just one script [here](https://github.com/intel/edge-insights-vision#eiv-installation) and help developers to run OpenVINO inference on Intel® CPU and iGPU/dGPU using OpenVINO docker image as runtime.<br>**
 
 
 Here is the architecture diagram for EIV
@@ -62,14 +62,14 @@ Follow this step-by-step guide to install Intel® EIV on Linux* for your target 
 ### EIV Installation
 Run the following commands on the target system to install EIV.
 
-Before running these commands, refer to [System Requirements](https://github.com/intel-innersource/frameworks.ai.eiv/blob/release-2.1/README.md#system-requirements) and the [Prepare the Target System](https://github.com/intel-innersource/frameworks.ai.eiv/blob/release-2.1/README.md#prepare-the-target-system) sections above.
+Before running these commands, refer to [System Requirements](https://github.com/intel/edge-insights-vision#system-requirements) and the [Prepare the Target System](https://github.com/intel/edge-insights-vision#prepare-the-target-system) sections above.
 
 1. clone the git repo and run the script as shown below
    
    ```
    sudo apt -y install git
    git clone https://github.com/intel/edge-insights-vision.git
-   cd frameworks.ai.eiv
+   cd edge-insights-vision
    ./eiv_install.sh
    ```
 3. Restart your system after installation is complete.
