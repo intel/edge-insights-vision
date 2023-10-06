@@ -68,7 +68,7 @@ Before running these commands, refer to [System Requirements](https://github.com
    
    ```
    sudo apt -y install git
-   git clone https://github.com/intel-innersource/frameworks.ai.eiv.git
+   git clone https://github.com/intel/edge-insights-vision.git
    cd frameworks.ai.eiv
    ./eiv_install.sh
    ```
