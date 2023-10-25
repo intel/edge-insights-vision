@@ -5,8 +5,7 @@ Follow these steps to launch Jupyter Notebook and run basic tutorials to verify 
 
 1. After successful installation, change the launch_notebooks.sh script to executable and run the launcher script as below
    ```shell
-   cd frameworks.ai.eiv
-   chmod +x launch_notebooks.sh
+   cd edge-insights-vision/scripts
    ./launch_notebooks.sh
    ```
 2. Open your browser and paste the URL highlighted below to open the Jupyter notebook. 
