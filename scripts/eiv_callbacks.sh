@@ -39,14 +39,13 @@ docker_proxy(){
 
 kern_upgrade_dgpu(){
     if [ $RELEASE == "22.04" ]; then
-        if dpkg --compare-versions "$(uname -r | cut -d'-' -f1)" lt 6.2.8 ; then
+        if dpkg --compare-versions "$(uname -r | cut -d'-' -f1)" lt 6.3.0 ; then
             sudo apt-get update
             cd $HOME
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.2.8/amd64/linux-headers-6.2.8-060208-generic_6.2.8-060208.202303220943_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.2.8/amd64/linux-headers-6.2.8-060208_6.2.8-060208.202303220943_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.2.8/amd64/linux-image-unsigned-6.2.8-060208-generic_6.2.8-060208.202303220943_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.2.8/amd64/linux-modules-6.2.8-060208-generic_6.2.8-060208.202303220943_amd64.deb
-            sudo dpkg -i $HOME/linux-*.deb
+            sudo add-apt-repository ppa:cappelikan/ppa -y
+            sudo apt update
+            sudo apt install -y mainline
+            sudo mainline install 6.3
             sudo update-grub
             rm $HOME/linux-*.deb
             sudo reboot
