@@ -9,6 +9,15 @@ Intel no longer accepts patches to this project.
 If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.  
 
 Contact: webadmin@linux.intel.com
+
+> [!NOTE]
+> Our new repository can be found here:
+> 
+> https://github.com/intel/edge-developer-kit-reference-scripts
+> 
+> Thanks for your continued interest!
+
+
 # Edge Insights for Vision (EIV)
 EIV from Intel features a set of pre-integrated ingredients designed for computer vision and deep-learning inference for applications at the edge, optimized for Intel® architecture. It can be implemented as a containerized architecture or a stand-alone runtime.
 
